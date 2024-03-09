@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-off-white">
+    <header class="bg-aquatic-blue text-white">
+      <div class="container mx-auto">
+        <nav id="navbar">
+          <!-- Navbar content here -->
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+      <section class="my-8">
+        <h1 class="text-4xl font-bold text-shrimp-red">
+          Completed - The applicant has been sent next steps.
+        </h1>
+        <p class="mt-4 text-lg">
+          Congratulations! The action associated with your email has been
+          successfully completed.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const params = new URLSearchParams(window.location.search);
+        fetch("https://hook.us1.make.com/d2toyivdnyxdx6yzj26x5q2q68o6qpkh", {
+          method: "POST",
+          body: JSON.stringify({
+            email: params.get("email"),
+            action: "application-pass", // Since this is the "Action Passed" page
+            task_id: params.get("task_id"),
+            database_item_id: params.get("database_item_id"), // New field
+          }),
+          headers: { "Content-Type": "application/json" },
+        });
+      });
+    </script>
+
+    <script src="../assets/js/navbar.js"></script>
+  </body>
+</html>

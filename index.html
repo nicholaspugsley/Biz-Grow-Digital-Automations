@@ -6,10 +6,10 @@
     <title>Biz Grow Digital - Automations</title>
     <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-off-white flex flex-col min-h-screen">
-    <header class="bg-aquatic-blue text-white">
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-500 text-white">
       <div class="container mx-auto">
-        <nav class="bg-aquatic-blue text-white p-4">
+        <nav class="bg-blue-500 text-white p-4">
           <div class="container mx-auto flex justify-between items-center">
             <p class="text-lg font-semibold">Biz Grow Digital - Automations</p>
             <button id="navbarToggle" class="text-white md:hidden">
@@ -30,17 +30,17 @@
               <div class="text-sm md:flex-grow">
                 <a
                   href="./pages/action-passed.html"
-                  class="hover:bg-light-blue text-aquatic-white p-2 rounded"
+                  class="hover:bg-blue-300 text-white p-2 rounded"
                   >Action Passed</a
                 >
                 <a
                   href="./pages/"
-                  class="hover:bg-light-blue text-aquatic-white p-2 rounded"
+                  class="hover:bg-blue-300 text-white p-2 rounded"
                   >2</a
                 >
                 <a
                   href="./pages/"
-                  class="hover:bg-light-blue text-white p-2 rounded"
+                  class="hover:bg-blue-300 text-white p-2 rounded"
                   >3</a
                 >
               </div>
@@ -52,22 +52,22 @@
             >
               <a
                 href="./index.html"
-                class="hover:bg-light-blue text-aquatic-blue p-2 rounded"
+                class="hover:bg-blue-300 text-blue-500 p-2 rounded"
                 >Home</a
               >
               <a
                 href="./index.html"
-                class="hover:bg-light-blue text-aquatic-blue p-2 rounded"
+                class="hover:bg-blue-300 text-blue-500 p-2 rounded"
                 >1</a
               >
               <a
                 href="./index.html"
-                class="hover:bg-light-blue text-aquatic-blue p-2 rounded"
+                class="hover:bg-blue-300 text-blue-500 p-2 rounded"
                 >2</a
               >
               <a
                 href="./index.html"
-                class="hover:bg-light-blue text-aquatic-blue p-2 rounded"
+                class="hover:bg-blue-300 text-blue-500 p-2 rounded"
                 >3</a
               >
             </div>
@@ -77,7 +77,7 @@
     </header>
 
     <main class="flex-grow">
-      <section class="hero bg-shrimp-red text-white py-12 px-4">
+      <section class="hero py-12 px-4">
         <div class="container mx-auto text-center">
           <h1 class="text-4xl font-bold mb-4">
             Project Overview: Automation Actions
@@ -90,17 +90,108 @@
         </div>
       </section>
 
+      <!-- VA Application -->
       <section class="featured-content py-12 px-4">
-        <div class="container mx-auto">
-          <h2 class="text-2xl font-bold mb-4 text-center">Task Summaries</h2>
-          <p class="text-lg mb-4 text-center">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">Application | Pass or Fail</h2>
+          <p class="text-lg mb-4">
             Below you will find summaries of recent tasks, including their
             current status and options to view detailed results or actions
             taken.
           </p>
-          <!-- Example placeholder for dynamically loaded content -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Dynamically generated content blocks for each task -->
+          <div class="flex justify-center gap-4">
+            <a
+              href="./pages/application-pass.html"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Pass
+            </a>
+            <a
+              href="./pages/application-fail.html"
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Fail
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VA Initial Interview -->
+      <section class="featured-content py-12 px-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">
+            Initial Interview | Pass or Fail
+          </h2>
+          <p class="text-lg mb-4">
+            Below you will find summaries of recent tasks, including their
+            current status and options to view detailed results or actions
+            taken.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="./pages/pass.html"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Pass
+            </a>
+            <a
+              href="./pages/fail.html"
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Fail
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VA Sample Task -->
+      <section class="featured-content py-12 px-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">VA Sample Task | Pass or Fail</h2>
+          <p class="text-lg mb-4">
+            Below you will find summaries of recent tasks, including their
+            current status and options to view detailed results or actions
+            taken.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="./pages/pass.html"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Pass
+            </a>
+            <a
+              href="./pages/fail.html"
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Fail
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Job Offer -->
+      <section class="featured-content py-12 px-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-2xl font-bold mb-4">VA Job Offer | Pass or Fail</h2>
+          <p class="text-lg mb-4">
+            Below you will find summaries of recent tasks, including their
+            current status and options to view detailed results or actions
+            taken.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="./pages/pass.html"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Pass
+            </a>
+            <a
+              href="./pages/fail.html"
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Fail
+            </a>
           </div>
         </div>
       </section>
