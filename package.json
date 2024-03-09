@@ -1,0 +1,19 @@
+{
+  "name": "Biz Grow Digital Automations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --minify",
+    "watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch"
+},
+  "keywords": [],
+  "author": "Nicholas Pugsley",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+}

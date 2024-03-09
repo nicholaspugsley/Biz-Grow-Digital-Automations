@@ -1,0 +1,41 @@
+# Ignore system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore Python virtual environment
+venv/
+__pycache__/
+
+# Ignore compiled binaries and libraries
+*.dll
+*.so
+*.dylib
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore sensitive or private information
+secrets.json
+config.ini
+
+# Ignore IDE settings
+*.code-workspace
