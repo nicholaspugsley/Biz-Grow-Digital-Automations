@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-off-white">
+    <main class="container mx-auto p-4">
+      <section class="my-8">
+        <h1 class="text-4xl font-bold text-shrimp-red">
+          VA Final Interview Passed - You may close this tab.
+        </h1>
+        <p class="mt-4 text-lg">
+          action associated with your email has been successfully completed.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const params = new URLSearchParams(window.location.search);
+        fetch("https://hook.us1.make.com/d2toyivdnyxdx6yzj26x5q2q68o6qpkh", {
+          method: "POST",
+          body: JSON.stringify({
+            email: params.get("email"),
+            action: "final-interview-pass",
+            task_id: params.get("task_id"),
+            database_item_id: params.get("database_item_id"),
+          }),
+          headers: { "Content-Type": "application/json" },
+        });
+      });
+    </script>
+  </body>
+</html>
